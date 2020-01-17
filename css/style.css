@@ -1,0 +1,151 @@
+
+@font-face
+{
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+    url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+    url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+body
+{
+    padding: 75px 0;
+}
+.clear:after
+{
+    display: block;
+    clear: both;
+    content: '';
+}
+.in-column::-webkit-input-placeholder
+{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+.wrapper
+{
+    width: 990px;
+    margin: 0 auto;
+}
+h1
+{
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #1f222c;
+}
+h2
+{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #b3b3b3;
+}
+.easy-form
+{
+    width: 330px;
+}
+textarea
+{
+    min-height: 100px;
+    max-height: 250px;
+    resize: vertical;
+}
+.in-column
+{
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.easy-form textarea
+{
+    height: 130px;
+}
+.static
+{
+    position: fixed;
+    z-index: 10;
+    top: 175px;
+    right: 100px;
+    width: 310px;
+}
+.static-form
+{
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+.login,
+.password
+{
+    position: relative;
+    margin-bottom: 0;
+}
+.login span,
+.password span
+{
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    top: -30px;
+    color: #b3b3b3;
+}
+.i-login,
+.i-password
+{
+    padding: 12px 52px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.elements-container form
+{
+    width: 50%;
+}
+.delivery,
+.function
+{
+    border: none;
+}
+.delivery
+{
+    width: 165px;
+}

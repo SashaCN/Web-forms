@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Веб форми</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Веб форми</title>
 </head>
+
 <body>
-    
-</body>
-</html>
+  <div class="wrapper" class="clear">
+    <h1>Форми</h1>
+    <div class="easy-form">
+      <h2>01. проста форма</h2>
+      <form action="index.php" method="POST">
+        <label><input type="text" maxlength="15" placeholder="Введіть ім’я" name="name" class="in-column"></label>
+        <lable><input type="email" maxlength="30" placeholder="Email" name="Email" class="in-column"></lable>
+        <select name="town" id="towns" class="in-column">
+          <option value="" disabled selected>Ваше місто</option>
+          <option value="khm">Хмельницький</option>
+          <option value="lv">Львів</option>
+          <option value="kv">Київ</option>
+        </select>
+        <textarea name="mail" id="email" class="in-column" maxlength="30">Email</textarea>
+        <label><input type="submit" value="Зареєструватися" name="registr" class="in-column"></label>
+      </form>
+    </div>
+    <hr>
+    <div class="elements">
+      <h2 class="elements-container">02. Елементи</h2>
+      <form action="index.php" method="POST">
+        <fieldset class="delivery">
+          <p><input type="radio" name="New-post" id="delivery">
+
+            <label for="Delivery" action="index.php" method="POST">Нова Пошта</label></p>
+            <p><input type="radio" name="Courier" id="delivery">
+              <label for="Delivery" action="index.php" method="POST">Кур’єр</label></p>
+              <p><input type="radio" name="Courier" id="delivery" disabled>
+                <label for="delivery" action="index.php" method="POST">Самовивіз</label></p>
+              </fieldset>
+              <fieldset class="function">
+               <p><input type="checkbox" name="readed" id="function">
+                 <label for="function" action="index.php" method="POST">Прочитав умови договору</label></p>
+                 <p><input type="checkbox" name="agree" id="function">
+                   <label for="function" action="index.php" method="POST">Згідний з ПДВ 9%</label></p>
+                   <p><input type="checkbox" name="mailing" id="function" disabled>
+                     <label for="function" action="index.php" method="POST">Отримувати новини на ел. пошту</label></p>
+                   </fieldset>
+                 </form>
+               </div>
+               <div class="static">
+                <h2>06. фіксована форма</h2>
+                <form action="index.php" method="POST" class="static-form">
+                  <p>
+                    <lable class="login">
+                      <span>Логін</span>
+                      <input type="text" name="login" class="i-login">
+                    </lable>
+                  </p>
+                  <p>
+                    <lable class="login">
+                      <span>Пароль</span>
+                      <input type="password" name="password" class="i-password">
+                    </lable>
+                  </p>
+                  <a href="#">Забули пароль?</a>
+                  <p>
+                    <label><input type="checkbox">Запам’ятати пароль</label>
+                  </p>
+                  <p>
+                    <label><input type="submit" value="Увійти" class="fixed-button"></label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </body>
+
+          </html>
