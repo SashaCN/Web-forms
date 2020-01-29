@@ -42,6 +42,7 @@
 body
 {
     padding: 75px 0;
+    font-family: 'Roboto';
 }
 .clear:after
 {
@@ -51,10 +52,22 @@ body
 }
 .in-column::-webkit-input-placeholder
 {
-    font-family: 'Roboto';
     font-size: 14px;
     font-weight: 400;
     color: #b3b3b3;
+}
+.in-column,
+.fixed-button
+{
+    padding: 11.5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+.in-column{
+        margin-bottom: 10px;
 }
 .wrapper
 {
@@ -72,7 +85,6 @@ h1
 }
 h2
 {
-    font-family: 'Roboto';
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0;
@@ -89,15 +101,22 @@ textarea
     max-height: 250px;
     resize: vertical;
 }
-.in-column
+input:focus
 {
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 10px;
+    border: 1px solid #3d69ff;
+    box-shadow: 0 0 5px rgba(61, 105, 255, .55);
 }
 .easy-form textarea
 {
     height: 130px;
+}
+.button-registr,
+.fixed-button
+{
+    font-weight: 700;
+    color: #fff;
+    background-color: #12d661;
+    border: none;
 }
 .static
 {
@@ -106,12 +125,23 @@ textarea
     top: 175px;
     right: 100px;
     width: 310px;
+    max-height: 270px;
+    height: 100%;
 }
 .static-form
 {
+    box-sizing: border-box;
+    padding: 20px 24px;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     background-color: #fafafa;
+}
+.login-line
+{
+    margin-bottom: 32px;
+}
+.password-line{
+    margin-bottom: 7px;
 }
 .login,
 .password
@@ -122,7 +152,6 @@ textarea
 .login span,
 .password span
 {
-    font-family: 'Roboto';
     font-size: 13px;
     font-weight: 400;
     position: absolute;
@@ -132,7 +161,7 @@ textarea
 .i-login,
 .i-password
 {
-    padding: 12px 52px;
+    padding: 9px 47.5px;
     border: 1px solid #ccc;
     border-radius: 2px;
 }
@@ -144,8 +173,69 @@ textarea
 .function
 {
     border: none;
+    float: left;
 }
 .delivery
 {
     width: 165px;
+}
+.static a
+{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #3e6aff;
+    margin-bottom: 10px;
+    text-decoration: none; 
+}
+.static a:hover{
+    text-decoration: underline;
+}
+.save-password{
+    margin-top: 0;
+}
+.style-checkbox{
+    font-family: 'Roboto Slab';
+    font-size: 13px;
+    visibility: hidden;
+}
+.style-checkbox+label{
+    position: relative;
+    font-family: "Times New Roman";
+    font-size: 13px;
+    padding-left: 5px;
+    color: #1f222c;
+}
+
+.style-checkbox+label::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: -23px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.style-checkbox:checked+label::before{
+    border: 1.5px solid #3d69ff;
+}
+.style-checkbox:checked+label:after{
+    content: "";
+    position: absolute;
+    left: -17.5px;
+    top: 3px;
+    width: 7.5px;
+    height: 4px;
+    transition: all 1s ease;
+    transform: rotate(-45deg);
+    border-bottom: 1px solid #3d69ff;
+    border-left: 1px solid #3d69ff;
+}
+.fixed-button{
+    width: 100%;
+
+}
+.static p:last-child{
+    margin-bottom: 0;
 }

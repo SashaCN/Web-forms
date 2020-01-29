@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <link rel="stylesheet" href="css/style.css">
@@ -24,57 +24,57 @@
           <option value="kv">Київ</option>
         </select>
         <textarea name="mail" id="email" class="in-column" maxlength="30">Email</textarea>
-        <label><input type="submit" value="Зареєструватися" name="registr" class="in-column"></label>
+        <label><input type="submit" value="Зареєструватися" name="registr" class="in-column button-registr"></label>
       </form>
     </div>
     <hr>
     <div class="elements">
       <h2 class="elements-container">02. Елементи</h2>
-      <form action="index.php" method="POST">
+      <form action="index.php" method="POST" class="clear">
         <fieldset class="delivery">
           <p><input type="radio" name="New-post" id="delivery">
-
             <label for="Delivery" action="index.php" method="POST">Нова Пошта</label></p>
-            <p><input type="radio" name="Courier" id="delivery">
-              <label for="Delivery" action="index.php" method="POST">Кур’єр</label></p>
-              <p><input type="radio" name="Courier" id="delivery" disabled>
-                <label for="delivery" action="index.php" method="POST">Самовивіз</label></p>
-              </fieldset>
-              <fieldset class="function">
-               <p><input type="checkbox" name="readed" id="function">
-                 <label for="function" action="index.php" method="POST">Прочитав умови договору</label></p>
-                 <p><input type="checkbox" name="agree" id="function">
-                   <label for="function" action="index.php" method="POST">Згідний з ПДВ 9%</label></p>
-                   <p><input type="checkbox" name="mailing" id="function" disabled>
-                     <label for="function" action="index.php" method="POST">Отримувати новини на ел. пошту</label></p>
-                   </fieldset>
-                 </form>
-               </div>
-               <div class="static">
-                <h2>06. фіксована форма</h2>
-                <form action="index.php" method="POST" class="static-form">
-                  <p>
-                    <lable class="login">
-                      <span>Логін</span>
-                      <input type="text" name="login" class="i-login">
-                    </lable>
-                  </p>
-                  <p>
-                    <lable class="login">
-                      <span>Пароль</span>
-                      <input type="password" name="password" class="i-password">
-                    </lable>
-                  </p>
-                  <a href="#">Забули пароль?</a>
-                  <p>
-                    <label><input type="checkbox">Запам’ятати пароль</label>
-                  </p>
-                  <p>
-                    <label><input type="submit" value="Увійти" class="fixed-button"></label>
-                  </p>
-                </form>
-              </div>
-            </div>
-          </body>
+          <p><input type="radio" name="Courier" id="delivery">
+            <label for="Delivery" action="index.php" method="POST">Кур’єр</label></p>
+          <p><input type="radio" name="Courier" id="delivery" disabled>
+            <label for="delivery" action="index.php" method="POST">Самовивіз</label></p>
+        </fieldset>
+        <fieldset class="function">
+          <p><input type="checkbox" name="readed" id="style-checkbox" class="style-checkbox">
+            <label for="style-checkbox" action="index.php" method="POST">Прочитав умови договору</label></p>
+          <p><input type="checkbox" name="agree" id="style-checkbox" class="style-checkbox">
+            <label for="style-checkbox" action="index.php" method="POST">Згідний з ПДВ 9%</label></p>
+          <p><input type="checkbox" name="mailing" id="style-checkbox" class="style-checkbox" disabled>
+            <label for="style-checkbox" action="index.php" method="POST">Отримувати новини на ел. пошту</label></p>
+        </fieldset>
+      </form>
+    </div>
+    <div class="static">
+      <h2>06. фіксована форма</h2>
+      <form action="index.php" method="POST" class="static-form">
+        <p class="login-line">
+          <lable class="login">
+            <span>Логін</span>
+            <input type="text" name="login" class="i-login">
+          </lable>
+        </p>
+        <p class="password-line">
+          <lable class="password">
+            <span>Пароль</span>
+            <input type="password" name="password" class="i-password">
+          </lable>
+        </p>
+        <a href="#">Забули пароль?</a>
+        <p class="save-password">
+          <input type="checkbox" class="style-checkbox" id="style-checkbox">
+          <label for="style-checkbox">Запам’ятати пароль</label>
+        </p c>
+        <p>
+          <label><input type="submit" value="Увійти" class="fixed-button"></label>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
 
-          </html>
+</html>
