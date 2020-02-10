@@ -118,7 +118,7 @@ input:focus
 }
 .static
 {
-    /* display: none;   */
+    display: none;  
     position: fixed;
     z-index: 10;
     top: 175px;
@@ -202,15 +202,15 @@ input:focus
 .elements-right th{
     padding:10px;   
 }
-.second-line th{
-    padding-bottom: 20px;
+/* .second-line th{
+    padding-bottom: 30px;
 }
 .first-line td{
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .second-line td{
-    padding-bottom: 10px;
-}
+    padding-bottom: 20px;
+} */
 .elements-right td,
 .elements-right input{
     font-weight: 400;
@@ -246,6 +246,15 @@ input:focus
 .style-radio{
     visibility: hidden;
     position: absolute;
+}
+.style-checkbox:disabled+label,
+.style-radio:disabled+label{
+    color: #b3b3b3;
+}
+.style-checkbox:disabled+label:before,
+.style-radio:disabled+label:before{
+    border-color: #e5e5e5;
+    background-color: #f7f7f7;
 }
 .style-checkbox+label,
 .static-checkbox+label,
