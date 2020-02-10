@@ -23,7 +23,7 @@
           <option value="lv">Львів</option>
           <option value="kv">Київ</option>
         </select>
-        <textarea name="mail" id="email" class="in-column" maxlength="30">Email</textarea>
+        <textarea name="mail" id="mial" class="in-column" maxlength="30" placeholder="Повідомлення"></textarea>
         <label><input type="submit" value="Зареєструватися" name="registr" class="in-column button-registr"></label>
       </form>
     </div>
@@ -31,22 +31,65 @@
     <div class="elements">
       <h2 class="elements-container">02. Елементи</h2>
       <form action="index.php" method="POST" class="clear">
-        <fieldset class="delivery">
-          <p><input type="radio" name="New-post" id="delivery">
-            <label for="Delivery" action="index.php" method="POST">Нова Пошта</label></p>
-          <p><input type="radio" name="Courier" id="delivery">
-            <label for="Delivery" action="index.php" method="POST">Кур’єр</label></p>
-          <p><input type="radio" name="Courier" id="delivery" disabled>
-            <label for="delivery" action="index.php" method="POST">Самовивіз</label></p>
+        <fieldset class="elements-left">
+          <fieldset class="delivery">
+            <p><input type="radio" name="delivery" id="nova-poshta" class="style-radio">
+              <label for="nova-poshta">Нова Пошта</label></p>
+            <p><input type="radio" name="delivery" id="courier" class="style-radio">
+              <label for="courier">Кур’єр</label></p>
+            <p><input type="radio" name="delivery" id="singularly" class="style-radio" disabled>
+              <label for="singularly">Самовивіз</label></p>
+          </fieldset>
+          <fieldset class="function">
+            <p><input type="checkbox" name="readed" id="readed" class="style-checkbox">
+              <label for="readed">Прочитав умови договору</label></p>
+            <p><input type="checkbox" name="agree" id="agree" class="style-checkbox">
+              <label for="agree">Згідний з ПДВ 9%</label></p>
+            <p><input type="checkbox" name="mailing" id="send-news" class="style-checkbox" disabled>
+              <label for="send-news">Отримувати новини на ел. пошту</label></p>
+          </fieldset>
         </fieldset>
-        <fieldset class="function">
-          <p><input type="checkbox" name="readed" id="style-checkbox" class="style-checkbox">
-            <label for="style-checkbox" action="index.php" method="POST">Прочитав умови договору</label></p>
-          <p><input type="checkbox" name="agree" id="style-checkbox" class="style-checkbox">
-            <label for="style-checkbox" action="index.php" method="POST">Згідний з ПДВ 9%</label></p>
-          <p><input type="checkbox" name="mailing" id="style-checkbox" class="style-checkbox" disabled>
-            <label for="style-checkbox" action="index.php" method="POST">Отримувати новини на ел. пошту</label></p>
+        <table class="elements-right">
+          <tr class="first-line">
+            <th>Статус</th>
+            <td>
+              <p><input name="news" type="checkbox" id="news" class="style-checkbox">
+                <label for="news">Новини</label>
+                <input name="sale-products" type="checkbox" id="sale-products" class="style-checkbox">
+                <label for="sale-products">Акційні товари</label>
+                <input name="sale" type="checkbox" id="sale" class="style-checkbox">
+                <label for="sale">Розпродаж</label></p>
+            </td>
+          </tr>
+          <tr class="second-line">
+            <th>Дата</th>
+            <td>
+              <p><input type="date" name="date" id="date" class="date">
+                <label for="date"></label></p>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <hr>
+    </div>
+    <div class="style-elements">
+      <h2>03. стилізовані чекбокси</h2>
+      <form action="index.php" method="post">
+        <fieldset class="gender">
+          <p><input type="radio" name="man" id="man" class="man">
+            <label for="man">Чоловік</label></p>
+          <p><input type="radio" name="woman" id="woman" class="woman">
+            <label for="woman">Жінка</label></p>
         </fieldset>
+        <fieldset class="style-function">
+          <p><input type="checkbox" name="style-news" id="style-news" class="secon-style-checkbox">
+            <label for="style-news">Отримувати новини</label></p>
+          <p><input type="checkbox" name="buy-sausage" id="buy-sausage" class="secon-style-checkbox">
+            <label for="">Купити додому ковбаси</label></p>
+          <p><input type="checkbox" name="turn-on-light" id="turn-on-light" class="secon-style-checkbox">
+            <label for="turn-on-light">Включити світло</label></p>
+        </fieldset>
+        <hr>
       </form>
     </div>
     <div class="static">
@@ -66,9 +109,9 @@
         </p>
         <a href="#">Забули пароль?</a>
         <p class="save-password">
-          <input type="checkbox" class="style-checkbox" id="style-checkbox">
-          <label for="style-checkbox">Запам’ятати пароль</label>
-        </p c>
+          <input type="checkbox" class="style-checkbox static-checkbox" id="save-password">
+          <label for="save-password">Запам’ятати пароль</label>
+        </p>
         <p>
           <label><input type="submit" value="Увійти" class="fixed-button"></label>
         </p>
