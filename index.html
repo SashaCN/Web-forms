@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <div class="wrapper" class="clear">
+  <div class="wrapper clear">
     <h1>Форми</h1>
     <div class="easy-form">
       <h2>01. проста форма</h2>
       <form action="index.php" method="POST">
         <label><input type="text" maxlength="15" placeholder="Введіть ім’я" name="name" class="in-column"></label>
-        <lable><input type="email" maxlength="30" placeholder="Email" name="Email" class="in-column"></lable>
+        <label><input type="email" maxlength="30" placeholder="Email" name="Email" class="in-column"></label>
         <select name="town" id="towns" class="in-column">
           <option value="" disabled selected>Ваше місто</option>
           <option value="khm">Хмельницький</option>
@@ -64,8 +64,9 @@
           <tr class="second-line">
             <th>Дата</th>
             <td>
-              <p><input type="date" name="date" id="date" class="date">
-                <label for="date"></label></p>
+              <p><label for="date" class="date-wrapper">
+                <input type="date" name="date" id="date" class="date">
+              </label>
             </td>
           </tr>
         </table>
@@ -74,7 +75,7 @@
     </div>
     <div class="style-elements">
       <h2>03. стилізовані чекбокси</h2>
-      <form action="index.php" method="post">
+      <form action="index.php" method="post" class="clear">
         <fieldset class="gender">
           <p><input type="radio" name="gender" id="man" class="man">
             <label for="man">Чоловік</label></p>
@@ -82,30 +83,31 @@
             <label for="woman">Жінка</label></p>
         </fieldset>
         <fieldset class="style-function">
-          <p><input type="checkbox" name="style-news" id="style-news" class="secon-style-checkbox">
+          <p><input type="checkbox" name="style-news" id="style-news" class="second-style-checkbox">
             <label for="style-news">Отримувати новини</label></p>
-          <p><input type="checkbox" name="buy-sausage" id="buy-sausage" class="secon-style-checkbox">
+          <p><input type="checkbox" name="buy-sausage" id="buy-sausage" class="second-style-checkbox">
             <label for="buy-sausage">Купити додому ковбаси</label></p>
-          <p><input type="checkbox" name="turn-on-light" id="turn-on-light" class="secon-style-checkbox">
+          <p><input type="checkbox" name="turn-on-light" id="turn-on-light" class="second-style-checkbox">
             <label for="turn-on-light">Включити світло</label></p>
         </fieldset>
         <hr>
       </form>
+      <hr>
     </div>
     <div class="static">
       <h2>06. фіксована форма</h2>
       <form action="index.php" method="POST" class="static-form">
         <p class="login-line">
-          <lable class="login">
+          <label class="login">
             <span>Логін</span>
             <input type="text" name="login" class="i-login">
-          </lable>
+          </label>
         </p>
         <p class="password-line">
-          <lable class="password">
+          <label class="password">
             <span>Пароль</span>
             <input type="password" name="password" class="i-password">
-          </lable>
+          </label>
         </p>
         <a href="#">Забули пароль?</a>
         <p class="save-password">
