@@ -65,7 +65,7 @@ fieldset{
 }
 .in-column,
 .fixed-button{
-    padding: 11.5px 15px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 2px;
     box-sizing: border-box;
@@ -227,7 +227,7 @@ input:focus{
     content: "";
     position: absolute;
     top: 0;
-    right: 13px;
+    right: 31px;
     width: 18px;
     height: 18px;
     background-image: url(../images/sprite.png);
@@ -244,10 +244,10 @@ input:focus{
     float: left;
 }
 .gender{
-    width: 33%;
+    width: 40%;
 }
 .style-function{
-    width: 66%;
+    width: 60%;
 }
 .style-checkbox,
 .style-radio,
@@ -296,7 +296,7 @@ input:focus{
     background-position: 0 0;
 }
 .style-function p{
-    line-height: 45px;
+    line-height: 50px;
     margin: 0;
 }
 .second-style-checkbox+label{
@@ -313,6 +313,7 @@ input:focus{
     height: 25px;
     border-radius: 12px;
     background-color: #cfcfd1;
+    transition: all 0.5s ease;
 }
 .second-style-checkbox+label:after{
     content: '';
@@ -323,6 +324,7 @@ input:focus{
     height: 21px;
     border-radius: 50%;
     background-color: #fff;
+    transition: all 0.5s     ease;
 }
 .second-style-checkbox:checked+label::before{
     background-color: #3e6aff;

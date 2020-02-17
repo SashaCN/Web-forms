@@ -14,7 +14,7 @@
     <h1>Форми</h1>
     <div class="easy-form">
       <h2>01. проста форма</h2>
-      <form action="index.php" method="POST">
+      <form action="send.php" method="POST">
         <label><input type="text" maxlength="15" placeholder="Введіть ім’я" name="name" class="in-column"></label>
         <label><input type="email" maxlength="30" placeholder="Email" name="Email" class="in-column"></label>
         <select name="town" id="towns" class="in-column">
@@ -23,6 +23,7 @@
           <option value="lv">Львів</option>
           <option value="kv">Київ</option>
         </select>
+        <label for="towns"></label>
         <textarea name="mail" id="mial" class="in-column" maxlength="30" placeholder="Повідомлення"></textarea>
         <label><input type="submit" value="Зареєструватися" name="registr" class="in-column button-registr"></label>
       </form>
@@ -30,7 +31,7 @@
     <hr>
     <div class="elements">
       <h2 class="elements-container">02. Елементи</h2>
-      <form action="index.php" method="POST" class="clear">
+      <form action="send.php" method="POST" class="clear">
         <fieldset class="elements-left">
           <fieldset class="delivery">
             <p><input type="radio" name="delivery" id="nova-poshta" class="style-radio">
@@ -45,8 +46,8 @@
               <label for="readed">Прочитав умови договору</label></p>
             <p><input type="checkbox" name="agree" id="agree" class="style-checkbox">
               <label for="agree">Згідний з ПДВ 9%</label></p>
-            <p><input type="checkbox" name="mailing" id="send-news" class="style-checkbox" disabled>
-              <label for="send-news">Отримувати новини на ел. пошту</label></p>
+            <p><input type="checkbox" name="mailing" id="send.php-news" class="style-checkbox" disabled>
+              <label for="send.php-news">Отримувати новини на ел. пошту</label></p>
           </fieldset>
         </fieldset>
         <table class="elements-right">
@@ -65,8 +66,8 @@
             <th>Дата</th>
             <td>
               <p><label for="date" class="date-wrapper">
-                <input type="date" name="date" id="date" class="date">
-              </label>
+                  <input type="date" name="date" id="date" class="date">
+                </label>
             </td>
           </tr>
         </table>
@@ -75,7 +76,7 @@
     </div>
     <div class="style-elements">
       <h2>03. стилізовані чекбокси</h2>
-      <form action="index.php" method="post" class="clear">
+      <form action="send.php" method="post" class="clear">
         <fieldset class="gender">
           <p><input type="radio" name="gender" id="man" class="man">
             <label for="man">Чоловік</label></p>
@@ -90,13 +91,72 @@
           <p><input type="checkbox" name="turn-on-light" id="turn-on-light" class="second-style-checkbox">
             <label for="turn-on-light">Включити світло</label></p>
         </fieldset>
-        <hr>
       </form>
       <hr>
     </div>
+    <div class="table-form">
+      <h2>04. форма таблицею</h2>
+      <form action="send.php" method="post">
+        <strong>Заповніть усі необхідні поля</strong>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="table-town">ФІО:</label></td>
+              <td>
+                <input type="text" name="town" id="table-town" placeholder="Введіть ім’я" class="in-column">
+                <label for="table-town"></label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="table-password">Пароль:</label></td>
+              <td>
+                <input type="password" minlengt="6" name="password" id="table-password" class="in-column"
+                  placeholder="Введіть не менше 6 символів">
+                <label for="table-password"></label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="tabel-select">Місто:</label></td>
+              <td>
+                <select name="town" id="tabel-select" class="in-column">
+                  <option value="Ваше місто" disabled selected>Ваше місто</option>
+                  <option value="Львів">Львів</option>
+                  <option value="Варшава">Варшава</option>
+                  <option value="Київ">Київ</option>
+                </select>
+                <label for="tabel-select"></label>
+              </td>
+            </tr>
+            <tr>
+              <td>Стать:</td>
+              <td>
+                <p>
+                  <input type="radio" name="tablegender" id="tman" class="style-radio">
+                  <label for="tableman">Чоловік</label>
+                  <input type="radio" name="tablegender" id="twoman" class="style-radio">
+                  <label for="twoman">Жінка</label>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Фото:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Коментарій:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
     <div class="static">
       <h2>06. фіксована форма</h2>
-      <form action="index.php" method="POST" class="static-form">
+      <form action="send.php" method="POST" class="static-form">
         <p class="login-line">
           <label class="login">
             <span>Логін</span>
