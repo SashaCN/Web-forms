@@ -97,7 +97,7 @@
     <div class="table-form">
       <h2>04. форма таблицею</h2>
       <form action="send.php" method="post">
-        <strong>Заповніть усі необхідні поля</strong>
+        <p class="strong">Заповніть усі необхідні поля</p>
         <table>
           <tbody>
             <tr>
@@ -110,7 +110,7 @@
             <tr>
               <td><label for="table-password">Пароль:</label></td>
               <td>
-                <input type="password" minlengt="6" name="password" id="table-password" class="in-column"
+                <input type="password" minlength="6" name="password" id="table-password" class="in-column"
                   placeholder="Введіть не менше 6 символів">
                 <label for="table-password"></label>
               </td>
@@ -128,27 +128,32 @@
               </td>
             </tr>
             <tr>
-              <td>Стать:</td>
+              <td><label for="tman">Стать:</label></td>
               <td>
                 <p>
                   <input type="radio" name="tablegender" id="tman" class="style-radio">
-                  <label for="tableman">Чоловік</label>
+                  <label for="tman">Чоловік</label>
                   <input type="radio" name="tablegender" id="twoman" class="style-radio">
                   <label for="twoman">Жінка</label>
                 </p>
               </td>
             </tr>
             <tr>
-              <td>Фото:</td>
-              <td></td>
+              <td><label for="takefile">Фото:</label></td>
+              <td class="file"><input type="file" id="takefile" class="change-file"><label for="takefile">Виберіть файл</label></td>
             </tr>
             <tr>
-              <td>Коментарій:</td>
-              <td></td>
+              <td class="cell-comment"><label for="comment">Коментарій:</label></td>
+              <td>
+                <textarea name="comment" id="comment" maxlength="250" placeholder="Введіть текст повідомлення"
+                  class="in-column"></textarea>
+                <label for="comment"></label>
+              </td>
             </tr>
             <tr>
               <td></td>
-              <td></td>
+              <td><input type="submit" value="Зареєструватися" id="registr" class="in-column button-registr"><label
+                  for="registr"></label></td>
             </tr>
           </tbody>
         </table>
