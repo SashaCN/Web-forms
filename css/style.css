@@ -45,8 +45,14 @@ body{
     font-family: 'Roboto';
 }
 hr{
-    border: 1px solid #dcdcde;
+    border: none;
+    border-top: 1px solid #dcdcde;
+}
+.line-between-form{
     margin: 50px 0;
+}
+.line-in-form{
+    margin: 25px 0;
 }
 .clear:after{
     display: block;
@@ -73,7 +79,7 @@ fieldset{
     margin: 0;
 }
 .in-column{
-        margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .wrapper{
     width: 80%;
@@ -111,18 +117,17 @@ input:focus{
     font-weight: 400;
     height: 130px;
 }
-.button-registr,
 .fixed-button{
+    font-size: 14px;
     font-weight: 700;
     color: #fff;
     background-color: #12d661;
     border: none;
 }
 .static{
-    /* display: none;  */
-    position: fixed;
+    /* position: fixed; */
     z-index: 10;
-    top: 175px;
+    top: 203px;
     right: 10.5%;
     width: 310px;
     max-height: 270px;
@@ -136,31 +141,41 @@ input:focus{
     background-color: #fafafa;
     box-shadow: 0px 5px 6px rgba(0,0,0,0.15);
 }
+.login-line,
+.password-line{
+    max-width: 260px;
+}
 .login-line{
     margin-bottom: 32px;
 }
 .password-line{
     margin-bottom: 7px;
 }
-.login,
-.password
-{
+.up-info{
     position: relative;
     margin-bottom: 0;
 }
-.login span,
-.password span{
+.up-info span{
     font-size: 13px;
     font-weight: 400;
     position: absolute;
     top: -30px;
     color: #b3b3b3;
 }
-.i-login,
-.i-password{
-    padding: 9px 47.5px;
+.form_5-login,
+.logining{
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 2px;
+    box-sizing: border-box;
+}
+.logining{
+    width: 260px;
+    height: 336x;
+}
+.form_5-login{
+    width: 100%;
+    height: 41px;
 }
 .elements-left p:first-child,
 .gender p:first-child,
@@ -368,6 +383,35 @@ input:focus{
     text-align: center;
     border-radius: 3px;
 }
+.registr-form{
+    width: 680px;
+}
+.table-wrapper:first-child{
+    padding-bottom: 0;
+}
+.table-wrapper{
+    padding: 15px 0;
+}
+.registr-form table{
+    width: 100%;   
+}
+.registr-form td{
+    margin-right: 10px;
+}
+.back{
+    float: left;
+    font-weight: 700;
+    padding: 13.5px 25px;
+    text-decoration: none;
+    color: #6e6f77;
+    text-align: center;
+    border: 1px solid #84868d;
+    border-radius: 3px;
+}
+.buy{
+    float: right;
+    width: 180px;
+}
 .static a{
     display: inline-block;
     font-size: 13px;
@@ -446,9 +490,6 @@ input:focus{
     width: 7px;
     height: 7px;
     border-radius: 50%;
-}
-.fixed-button{
-    width: 100%;
 }
 .static p:last-child{
     margin-bottom: 0;

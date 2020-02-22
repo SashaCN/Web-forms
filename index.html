@@ -25,10 +25,10 @@
         </select>
         <label for="towns"></label>
         <textarea name="mail" id="mial" class="in-column" maxlength="30" placeholder="Повідомлення"></textarea>
-        <label><input type="submit" value="Зареєструватися" name="registr" class="in-column button-registr"></label>
+        <label><input type="submit" value="Зареєструватися" name="registr" class="in-column fixed-button"></label>
       </form>
     </div>
-    <hr>
+    <hr class="line-between-form">
     <div class="elements">
       <h2 class="elements-container">02. Елементи</h2>
       <form action="send.php" method="POST" class="clear">
@@ -72,7 +72,7 @@
           </tr>
         </table>
       </form>
-      <hr>
+      <hr class="line-between-form">
     </div>
     <div class="style-elements">
       <h2>03. стилізовані чекбокси</h2>
@@ -92,7 +92,7 @@
             <label for="turn-on-light">Включити світло</label></p>
         </fieldset>
       </form>
-      <hr>
+      <hr class="line-between-form">
     </div>
     <div class="table-form">
       <h2>04. форма таблицею</h2>
@@ -103,7 +103,8 @@
             <tr>
               <td><label for="table-town">ФІО:</label></td>
               <td>
-                <input type="text" name="town" id="table-town" placeholder="Введіть ім’я" class="in-column">
+                <input type="text" maxlength="15" name="town" id="table-town" placeholder="Введіть ім’я"
+                  class="in-column">
                 <label for="table-town"></label>
               </td>
             </tr>
@@ -140,7 +141,8 @@
             </tr>
             <tr>
               <td><label for="takefile">Фото:</label></td>
-              <td class="file"><input type="file" id="takefile" class="change-file"><label for="takefile">Виберіть файл</label></td>
+              <td class="file"><input type="file" id="takefile" class="change-file"><label for="takefile">Виберіть
+                  файл</label></td>
             </tr>
             <tr>
               <td class="cell-comment"><label for="comment">Коментарій:</label></td>
@@ -152,26 +154,108 @@
             </tr>
             <tr>
               <td></td>
-              <td><input type="submit" value="Зареєструватися" id="registr" class="in-column button-registr"><label
+              <td><input type="submit" value="Зареєструватися" id="registr" class="fixed-button"><label
                   for="registr"></label></td>
             </tr>
           </tbody>
         </table>
       </form>
     </div>
+    <hr class="line-between-form">
+    <div class="registr-form">
+      <h2>05. форма таблицею</h2>
+      <p class="strong">Оформлення заявки</p>
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <td>
+              <label for="last-login" class="up-info">
+                <span>Прізвище та ім’я</span>
+                <input type="text" name="name" id="last-login" maxlength="40" class="form_5-login">
+              </label>
+            </td>
+            <td>
+              <label for="last-mail" class="up-info">
+                <span>Ел. пошта</span>
+                <input type="email" name="email" id="last-mail" class="form_5-login" maxlength="40">
+              </label>
+            </td>
+            <td>
+              <label for="last-phone" class="up-info">
+                <span>Телефон</span><input type="tel" class="form_5-login" id="last-phone">
+              </label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr class="line-in-form">
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <td>
+              <label for="country-select" class="up-info">
+                <span>Країна</span>
+                <select name="country" id="country-select" class="form_5-login">
+                  <option value="Індонезія" disabled selected>Індонезія</option>
+                  <option value="Китай">Китай</option>
+                  <option value="Україна">Україна</option>
+                  <option value="Росія">Росія</option>
+                </select>
+              </label>
+            </td>
+            <td>
+              <label for="adress" class="up-info">
+                <span>Адреса</span>
+                <input type="text" id="adress" class="form_5-login" maxlength="100">
+              </label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <td>
+              <label for="last-town" class="up-info"><span>Місто</span><input type="text" name="town" id="last-town"
+                  class="form_5-login" maxlength="50"></label>
+            </td>
+            <td>
+              <label for="house" class="up-info">
+                <span>Будинок</span>
+                <input type="text" name="house" id="house" class="form_5-login" maxlength="30">
+              </label>
+            </td>
+            <td>
+              <label for="mail-index" class="up-info">
+                <span>Поштовий індекс</span>
+                <input type="text" name="mail-index" id="mail-index" class="form_5-login" class="10">
+              </label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <input type="checkbox" name="agree-rule-buy" id="agree-rule-buy" class="style-checkbox">
+      <label for="agree-rule-buy">Я погоджуюсь з правилами оплати та доставки товару</label>
+      <hr class="line-in-form">
+      <p class="clear">
+        <a href="#" class="back">Повернутися назад</a>
+        <input type="submit" value="Оформити покупку" class="buy fixed-button" id="registr-buy">
+        <label for="registr-buy"></label>
+      </p>
+    </div>
     <div class="static">
       <h2>06. фіксована форма</h2>
       <form action="send.php" method="POST" class="static-form">
         <p class="login-line">
-          <label class="login">
+          <label class="up-info">
             <span>Логін</span>
-            <input type="text" name="login" class="i-login">
+            <input type="text" name="login" class="logining">
           </label>
         </p>
         <p class="password-line">
-          <label class="password">
+          <label class="up-info">
             <span>Пароль</span>
-            <input type="password" name="password" class="i-password">
+            <input type="password" name="password" class="logining">
           </label>
         </p>
         <a href="#">Забули пароль?</a>
@@ -183,7 +267,7 @@
           <label><input type="submit" value="Увійти" class="fixed-button"></label>
         </p>
       </form>
-    </div>
+    </label>
   </div>
 </body>
 
